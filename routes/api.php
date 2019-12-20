@@ -25,3 +25,6 @@ Route::get('/v1/users/{id}', function ($id) {
     ================*/
     return ["id" => $id];
 });
+
+Route::get('/v1/auth', 'AuthController@read');
+//Route::get('/v1/');
