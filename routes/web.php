@@ -11,6 +11,8 @@
 |
 */
 
+Route::resource('/upload', 'UploadController');
+
 Route::get('/', function () {
     return view('welcome');
 });

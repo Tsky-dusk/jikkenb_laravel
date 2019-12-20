@@ -3,8 +3,8 @@ require_once('../util/env.php');
 
 $host = env('DB_HOST', 'localhost');
 $name = env('DB_DATABASE', 'jikkenb');
-$user = env('DB_USERNAME', 'root');
-$pass = env('DB_PASSWORD', 'jikken2019');
+$user = env('DB_USERNAME', 'testuser1');
+$pass = env('DB_PASSWORD', 'hogehoge');
 
 $dsn = "mysql:host=$host;dbname=$name";
 
