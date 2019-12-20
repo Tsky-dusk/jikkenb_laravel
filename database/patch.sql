@@ -1,2 +1,2 @@
 -- ユーザテーブルにカラムを追加
-alter table jikkenb.users add (registration_token varchar(1023), registration_limit integer);
+alter table jikkenb.users add email varchar(1023);
