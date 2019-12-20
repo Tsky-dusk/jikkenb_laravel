@@ -23,5 +23,5 @@ Route::get('/v1/users/{id}', function ($id) {
     /*================
     /v1/users/:id の id を返すサンプル
     ================*/
-    echo $id;
+    return ["id" => $id];
 });
