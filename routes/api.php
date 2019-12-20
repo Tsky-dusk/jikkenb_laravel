@@ -13,8 +13,15 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
 Route::get('/v1/sharo_example', 'SharoExampleController@index');
+
+Route::get('/v1/users/{id}', function ($id) {
+    /*================
+    /v1/users/:id の id を返すサンプル
+    ================*/
+    echo $id;
+});
