@@ -11,6 +11,6 @@ use PDO;
 class SharoExampleController extends Controller {
     public function index () {
         $dbh = DB::connection()->getPdo();
-        return json_encode($dbh->query('select * from users')->fetchAll());
+        return $dbh->query('select * from users')->fetchAll();
     }
 }
