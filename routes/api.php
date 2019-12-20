@@ -27,4 +27,5 @@ Route::get('/v1/users/{id}', function ($id) {
 });
 
 Route::get('/v1/auth', 'AuthController@read');
-//Route::get('/v1/');
+Route::post('/v1/register', 'RegisterController@post');
+Route::get('/v1/register/confim', 'ConfimController@get');
