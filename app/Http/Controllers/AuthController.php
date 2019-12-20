@@ -11,8 +11,6 @@ use Illuminate\Http\Request;
 
 class AuthController extends Controller {
     public function read (Request $request) {
-        /*$dbh = DB::connection()->getPdo();
-        return $dbh->query('select  from users')->fetchAll();*/
 
         $email = $request->query('email');
         $password_hash = $request->query('password_hash');
@@ -26,14 +24,9 @@ class AuthController extends Controller {
         if($result){
             $result['success'] = true;
             return $result;
-        } else{
+        }
+        else{
             return ['success'=>false];
         }
-
-        //return $request->query('email');
-        // ['success' => bool, ...]
-
     }
-
-
 }
