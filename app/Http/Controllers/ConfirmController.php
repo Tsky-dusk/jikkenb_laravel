@@ -28,7 +28,7 @@ class ConfirmController extends Controller {
 
         if($date<=$limit) {
             return $result['success'] = true;
-            $update = $dbh->query('UPDATE jikkenb.users set registered=false where id='.$id.'');
+            $update = $dbh->query('UPDATE jikkenb.users set registered=true where id='.$id.'');
         }
         else {
             return ['success'=>false];
