@@ -25,3 +25,7 @@ Route::get('/v1/users/{id}', function ($id) {
     ================*/
     return ["id" => $id];
 });
+
+Route::get('/v1/auth', 'AuthController@read');
+Route::post('/v1/register', 'RegisterController@post');
+Route::get('/v1/register/confim', 'ConfimController@get');
